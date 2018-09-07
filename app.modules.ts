@@ -1,7 +1,12 @@
 console.log('hello')
 import {module} from 'angular';
 import {appCore} from './app.core.module';
-import {appBlogposts} from './blogposts/blogposts.routes'
+import {appBlocks} from './blocks/logDecorator.config';
+import {appBlogposts} from './blogposts/blogposts.routes';
+import {SiteSettingsCtrl} from './sitesettings/sitesettings.controller';
+import {UserService} from './service/user.service';
+import {siteSettingsService} from './sitesettings/sitesettings.service';
+
 
 export let app = module('app', [
     'app.core',
@@ -19,5 +24,5 @@ export let app = module('app', [
     'app.usersettings'
     
 ]).controller('mainCtrl', function() {
-    
+    console.log('hello');
 })
