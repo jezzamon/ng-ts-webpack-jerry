@@ -14,7 +14,7 @@ class SiteSettingsController implements ISiteSettingsScope {
   themeName: string;
 
   constructor() {}
-
+  
   save(): void {}
 }
 

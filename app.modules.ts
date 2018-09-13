@@ -6,6 +6,7 @@ import {appBlogposts} from './blogposts/blogposts.routes';
 import {SiteSettingsCtrl} from './sitesettings/sitesettings.controller';
 import {UserService} from './service/user.service';
 import {siteSettingsService} from './sitesettings/sitesettings.service';
+import {blogPostService} from './blogposts/blogpost.service';
 
 
 export let app = module('app', [
@@ -21,7 +22,8 @@ export let app = module('app', [
     'app.dashboard',
     'app.sitesettings',
     'app.users',
-    'app.usersettings'
+    'app.usersettings',
+    'app.services.BlogPostService'
     
 ]).controller('mainCtrl', function() {
     console.log('hello');
