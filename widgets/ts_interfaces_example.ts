@@ -9,6 +9,7 @@ function moveCharacter (distance: number, value: distanceMetric) {
   console.log(`You moved ${distance} ${value}`);
 }
 
+// 'dragon will return ts error due wrong type paramater
 // moveCharacter(3, 'dragon');
 moveCharacter(3, 'METRES');
 
